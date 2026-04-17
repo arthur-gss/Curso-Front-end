@@ -1,103 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inova Web</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Inova Web | Experiência Imersiva</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body class="p-4">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand text-white" href="#">Inova Web</a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a> 
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sobre</a>
-          </li>
-          </ul>
+  <nav class="navbar navbar-expand-lg fixed-top glass-nav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">INOVA<span>WEB</span></a>
+      <div class="ms-auto d-flex align-items-center gap-3">
+        <a href="#precos" class="text-decoration-none text-white small d-none d-md-block">Preços</a>
+        <a href="#contato" class="btn-modern">Contato</a>
       </div>
     </div>
   </nav>
+
+  <header class="hero-full d-flex align-items-center justify-content-center">
+    <div class="container text-center z-2">
+      <h1 class="big-text">CRIANDO<br>O FUTURO</h1>
+      <p class="lead opacity-50 mt-4 mx-auto" style="max-width: 600px;">
+        Interfaces de alto desempenho para marcas que buscam dominância digital.
+      </p>
+    </div>
+    <div class="hero-light-blob"></div>
+  </header>
+
+  <section id="precos" class="py-5 bg-black">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-uppercase">Nossos Planos</h2>
+            <p class="text-secondary">Investimento transparente para sua evolução.</p>
+        </div>
+
+        <div class="table-responsive glass-card border-0 p-1">
+            <table class="custom-table mb-0">
+                <thead>
+                    <tr>
+                        <th class="opacity-50 fw-light">SERVIÇO</th>
+                        <th class="opacity-50 fw-light">DESCRIÇÃO</th>
+                        <th class="opacity-50 fw-light">PRAZO</th>
+                        <th class="opacity-50 fw-light text-end">INVESTIMENTO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="fw-bold">LANDING PAGE</td>
+                        <td>Alta conversão para lançamentos.</td>
+                        <td>05 Dias</td>
+                        <td class="text-end fw-bold">R$ 1.200</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold">INSTITUCIONAL</td>
+                        <td>Presença digital robusta e SEO.</td>
+                        <td>15 Dias</td>
+                        <td class="text-end fw-bold">R$ 2.500</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold text-white">E-COMMERCE</td>
+                        <td>Loja virtual completa e escalável.</td>
+                        <td>30 Dias</td>
+                        <td class="text-end fw-bold text-white">R$ 4.800</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </section>
+
+  <footer class="py-5 text-center bg-black border-top border-secondary border-opacity-10">
+    <div class="container">
+        <div class="d-flex justify-content-center gap-4 mb-4 fs-4">
+            <i class="bi bi-instagram opacity-50"></i>
+            <i class="bi bi-linkedin opacity-50"></i>
+            <i class="bi bi-whatsapp opacity-50"></i>
+        </div>
+        <p class="small text-secondary">&copy; 2026 INOVA WEB. ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
+
 </body>
-<section class="bg-dark text-white py-5">
-  
-  <div class="container py-5 text-center">
-    
-    <h1 class="display-4 fw-bold">Inova Web Solutions</h1>
-    
-    <p class="lead">Transformando suas ideias em experiências digitais incríveis.</p>
-    
-    <div class="mt-4">
-      <a href="#" class="btn btn-light btn-lg">Começar Agora</a>
-    </div>
-    
-
-  </div>
-</section>
-<section class="container py-5">
-  <h2 class="text-center mb-4">Nossos Serviços</h2>
-
-  <div class="row g-4">
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">Criação de Sites</h5>
-          <p class="card-text">Desenvolvemos sites modernos e responsivos para o seu negócio.</p>
-          <a href="#" class="btn btn-primary">Saiba mais</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">SEO e Marketing</h5>
-          <p class="card-text">Colocamos sua empresa no topo das buscas do Google.</p>
-          <a href="#" class="btn btn-primary">Saiba mais</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">E-commerce</h5>
-          <p class="card-text">Lojas virtuais completas para você vender seus produtos online.</p>
-          <a href="#" class="btn btn-primary">Saiba mais</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
-
 </html>
