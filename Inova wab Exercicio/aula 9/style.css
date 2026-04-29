@@ -1,0 +1,143 @@
+/* Variáveis de Design */
+:root {
+    --black: #050505;
+    --gray-dark: #121212;
+    --glass: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --shadow-soft: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    background-color: var(--black);
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+/* --- NAVBAR --- */
+.glass-nav {
+    background: rgba(5, 5, 5, 0.8);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 1.5rem 0;
+}
+
+.navbar-brand {
+    font-family: 'Syne', sans-serif;
+    letter-spacing: -1px;
+    color: #fff !important;
+}
+
+.navbar-brand span { color: #555; }
+
+/* --- HERO SECTION --- */
+.hero-full {
+    height: 100vh;
+    background: radial-gradient(circle at top right, #1a1a1a 0%, #050505 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efeito de luz sutil no fundo */
+.hero-light-blob {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.03);
+    filter: blur(100px);
+    border-radius: 50%;
+    top: 10%;
+    left: -10%;
+    z-index: 1;
+}
+
+.big-text {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(3rem, 10vw, 8rem);
+    line-height: 0.9;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.4);
+    transition: 0.5s;
+}
+
+.big-text:hover {
+    color: #fff;
+    -webkit-text-stroke: 0px;
+    transform: scale(1.02);
+}
+
+/* --- TABELA MODERNA DARK --- */
+.glass-card {
+    background: var(--gray-dark);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    box-shadow: var(--shadow-soft);
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Espaço entre linhas para parecer cards */
+}
+
+.custom-table th {
+    padding: 1.5rem;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+}
+
+.custom-table tr {
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-table tbody tr {
+    background: var(--glass);
+}
+
+.custom-table td {
+    padding: 1.5rem;
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
+    color: rgba(255,255,255,0.7);
+}
+
+/* Cantos arredondados nas linhas */
+.custom-table td:first-child { 
+    border-left: 1px solid var(--glass-border);
+    border-top-left-radius: 15px; 
+    border-bottom-left-radius: 15px; 
+}
+.custom-table td:last-child { 
+    border-right: 1px solid var(--glass-border);
+    border-top-right-radius: 15px; 
+    border-bottom-right-radius: 15px; 
+}
+
+/* Efeito Hover na Tabela: A linha inteira "acende" */
+.custom-table tbody tr:hover {
+    background: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255,255,255,0.1);
+}
+
+.custom-table tbody tr:hover td {
+    color: #000 !important;
+}
+
+/* --- BOTÕES --- */
+.btn-modern {
+    background: #fff;
+    color: #000;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: 0.3s;
+    border: 1px solid #fff;
+}
+
+.btn-modern:hover {
+    background: transparent;
+    color: #fff;
+}
