@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Banco InovaWeb</title>
+</head>
+<body>
+  <h1>Banco InovaWeb</h1>
+  <div class="container">
+    <div class="card">
+      <h2>Saldo disponível</h2>
+      <div id="saldo">R$ 0.00</div>
+      <p class="info-conta">
+        Conta <strong id="numero-conta">1</strong> —
+        <strong id="titular">Alexandre</strong> &nbsp;
+        <span id="status-conta" class="status-bloqueada">Bloqueada</span>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Operações</h2>
+      
+      <div style="margin-bottom: 15px;">
+        <input type="text" id="campo-titular" placeholder="Novo nome do titular">
+        <button id="btn-atualizar-titular" style="width: 100%; margin-top: 5px; background: #6c757d; color: white; border: none; padding: 8px; border-radius: 8px; cursor: pointer;">
+            Atualizar Titular
+        </button>
+      </div>
+      <hr style="margin-bottom: 15px; border: 0; border-top: 1px solid #eee;">
+
+      <input type="number" id="campo-valor" placeholder="Digite o valor" min="0" step="0.01">
+      <div class="botoes">
+        <button id="btn-depositar">⬆ Depositar</button>
+        <button id="btn-sacar">⬇ Sacar</button>
+      </div>
+      <div id="mensagem"></div>
+      <button id="btn-bloquear">🔓 Desbloquear conta</button>
+    </div>
+
+    <div class="card">
+      <h2>Últimas transações</h2>
+      <ul id="lista-historico">
+        <li class="historico-vazio">Nenhuma transação ainda.</li>
+      </ul>
+      <button id="btn-limpar-historico" style="margin-top: 15px; width: 100%; background: #eee; color: #333; border: 1px solid #ccc; cursor: pointer; padding: 8px; border-radius: 8px;">
+        Sweep 🧹 Limpar Histórico
+      </button>
+    </div>
+
+    <div class="card">
+      <h2>Resumo</h2>
+      <div class="resumo-grid">
+        <div class="resumo-item"><span id="total-depositos">0</span><span>Depósitos</span></div>
+        <div class="resumo-item"><span id="total-saques">0</span><span>Saques</span></div>
+        <div class="resumo-item"><span id="total-transacoes">0</span><span>Total</span></div>
+      </div>
+    </div>
+  </div>
+  <script src="banco.js"></script>
+</body>
+</html>
